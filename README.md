@@ -21,7 +21,7 @@ module.exports = flow(
 
 ### template(templatePath, [options])
 
-#### template
+#### templatePath
 
 Type: `string`
 
