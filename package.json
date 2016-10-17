@@ -1,6 +1,6 @@
 {
   "name": "webpack-flow-template",
-  "version": "0.0.0",
+  "version": "0.1.0",
   "description": "Create HTML file to server your webpack output files.",
   "license": "MIT",
   "repository": "egoist/webpack-flow-template",
