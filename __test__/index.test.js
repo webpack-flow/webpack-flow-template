@@ -1,5 +1,9 @@
-const fn = require('../')
+const template = require('../')
 
 test('main', () => {
-  expect(fn()).toBe(1)
+  const obj = template('lol.template', {filename: '../index.html'})
+  const plugin = obj.plugins[0]
+  expect(plugin.constructor.name).toBe('HtmlWebpackPlugin')
+  expect(plugin.options.filename).toBe('../index.html')
+  expect(plugin.options.template).toBe('lol.template')
 })
